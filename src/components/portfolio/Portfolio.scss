@@ -2,9 +2,9 @@
 
 section {
   .projects {
+    height: 470px;
     display: flex;
     justify-content: space-around;
-    gap: 1rem;
     .project {
       border: 2px solid $secondary-dark-color;
       border-radius: $border-radius;
@@ -46,7 +46,9 @@ section {
     width: $container-width-md;
 
     .projects {
+      height: calc(470px + 2rem);
       flex-wrap: wrap;
+      overflow: hidden;
       .project {
         margin-top: 2rem;
       }
@@ -57,6 +59,7 @@ section {
 @media only screen and (max-width: 890px) {
   section {
     .projects {
+      height: 470px;
       .project {
         &:first-child {
           margin-top: 0;
