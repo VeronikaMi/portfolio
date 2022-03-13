@@ -1,0 +1,82 @@
+@import "../../styles.scss";
+
+section {
+  .projects {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    .project {
+      border: 2px solid $secondary-dark-color;
+      border-radius: $border-radius;
+      width: fit-content;
+      padding: 25px;
+      background-color: $secondary-dark-color;
+      margin-right: 2rem;
+      .img {
+        height: 300px;
+        width: 300px;
+        background-image: url("../../assets/ableton.png");
+      }
+
+      h3 {
+        font-size: 1.6rem;
+        margin: 0.9rem 0;
+      }
+
+      .btn-container > *:first-child {
+        margin-right: 15px;
+      }
+
+      &:hover {
+        transition: $transition;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .see-more {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  section {
+    width: $container-width-md;
+
+    .projects {
+      flex-wrap: wrap;
+      .project {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  section {
+    .projects {
+      .project {
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    width: $container-width-sm;
+
+    .projects {
+      .project {
+        margin: 0;
+        &:not(:first-child) {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}
