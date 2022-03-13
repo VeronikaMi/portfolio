@@ -1,0 +1,56 @@
+$bg-color: #0e0e52;
+$action-color: #c179e2;
+$secondary-color: #23b5d3;
+$text-color: #f3e8ee;
+$green-color: hsla(188, 36%, 52%, 0.75);
+$secondary-dark-color: #150578;
+
+$container-width-bg: 76%;
+$container-width-md: 86%;
+$container-width-sm: 95%;
+
+$border-radius: 10px;
+
+$transition: all 0.3s ease-in-out;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+h5 {
+  color: $green-color;
+}
+
+.btn {
+  border-radius: $border-radius;
+  padding: 0.8rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border: 1px solid $action-color;
+  transition: $transition;
+
+  &-primary {
+    background-color: $action-color;
+    color: $bg-color;
+
+    &:hover {
+      background-color: lighten($action-color, 2%);
+    }
+  }
+
+  &-secondary {
+    background-color: transparent;
+    color: $action-color;
+    &:hover {
+      color: lighten($action-color, 2%);
+      border-color: lighten($action-color, 2%);
+    }
+  }
+}

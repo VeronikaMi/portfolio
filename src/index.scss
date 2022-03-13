@@ -1,0 +1,22 @@
+@import "./styles.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: $bg-color;
+  color: $text-color;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
