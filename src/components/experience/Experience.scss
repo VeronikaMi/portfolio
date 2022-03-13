@@ -12,4 +12,48 @@ section {
       font-weight: 400;
     }
   }
+
+  .skills {
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .skill {
+    margin-right: 3rem;
+    .progress-bar {
+      margin-top: 5px;
+      margin-bottom: 1.8rem;
+      border: 1px solid $secondary-color;
+      border-radius: $border-radius;
+      height: 25px;
+      .progress {
+        background-color: $secondary-color;
+        height: inherit;
+        border-radius: inherit;
+      }
+    }
+  }
+
+  .growth {
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  section {
+    width: $container-width-md;
+    .skills {
+      height: fit-content;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    width: $container-width-sm;
+  }
 }
