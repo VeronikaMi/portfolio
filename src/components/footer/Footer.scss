@@ -1,0 +1,93 @@
+@import "../../styles.scss";
+
+footer {
+  // padding: 30px 0;
+  margin-top: 4rem;
+  height: 30vh;
+  background-color: $secondary-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .links {
+    width: $container-width-bg;
+    position: relative;
+  }
+
+  .footer-links {
+    width: fit-content;
+    margin: 0 auto;
+    li a {
+      color: $text-color;
+      margin-right: 1.3rem;
+      font-size: 1.2rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .contact-links {
+    width: fit-content;
+    margin: 30px auto;
+
+    li a {
+      margin-right: 1.3rem;
+      color: $bg-color;
+
+      &:hover {
+        transition: $transition;
+        color: lighten($bg-color, 8%);
+      }
+    }
+  }
+  p {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .arrow {
+    color: $text-color;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .links {
+    width: $container-width-md;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  footer {
+    height: fit-content;
+    padding: 20px 0;
+    .footer-links {
+      display: block;
+      text-align: center;
+
+      li {
+        margin-bottom: 10px;
+      }
+    }
+
+    // .arrow {
+    //   display: block;
+    //   position: static;
+    //   margin: 0 auto;
+    // }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .links {
+    width: $container-width-sm;
+  }
+}
