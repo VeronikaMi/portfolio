@@ -1,6 +1,5 @@
-import React,{useEffect} from "react";
+import React from "react";
 import "./About.scss";
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 import person from "../../assets/main-pic.png";

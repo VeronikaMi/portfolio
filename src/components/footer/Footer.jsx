@@ -16,31 +16,31 @@ function Footer() {
       <div className="links">
         <ul className="footer-links">
           <li>
-            <a href="home">About Me</a>
+            <a href="#home">About Me</a>
           </li>
           <li>
-            <a href="">My Experience</a>
+            <a href="#experience">My Experience</a>
           </li>
           <li>
-            <a href="">My Portfolio</a>
+            <a href="#portfolio">My Portfolio</a>
           </li>
           <li>
-            <a href="">Contact Me</a>
+            <a href="#contact">Contact Me</a>
           </li>
         </ul>
         <ul className="contact-links">
           <li>
-            <a href="#">
+            <a href="https://github.com/VeronikaMi">
               <BsGithub className="icon" size={30} />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://facebook.com">
               <BsFacebook className="icon" size={30} />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="mailto:nika.mitichashili@gmail.com">
               <MdMail className="icon" size={30} />
             </a>
           </li>

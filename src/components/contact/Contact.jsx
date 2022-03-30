@@ -40,13 +40,13 @@ function Contact() {
             <GoMail size={33} />
             <h4>Email</h4>
             <h6>myeamil@gmail.com</h6>
-            <a href="mailto:nika.mitichashili@gmail.com" target="_blank">Send a message</a>
+            <a href="mailto:nika.mitichashili@gmail.com" target="_blank" rel="noreferrer">Send a message</a>
           </div>
           <div className="trigger">
             <RiMessengerLine size={33} />
             <h4>Messenger</h4>
             <h6>facebookid</h6>
-            <a href="https://m.me/VeronikaMi01" target="_blank">Send a message</a>
+            <a href="https://m.me/VeronikaMi01" target="_blank" rel="noreferrer">Send a message</a>
           </div>
         </div>
       </div>

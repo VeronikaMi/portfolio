@@ -21,14 +21,20 @@ function Home() {
       <div className="header">
         <img src={logo} alt="logo" />
         <ul className="social-media-links">
-          <li>
-            <BsGithub className="icon" size={20} />
+        <li>
+            <a href="https://github.com/VeronikaMi">
+              <BsGithub className="icon" size={30} />
+            </a>
           </li>
           <li>
-            <BsFacebook className="icon" size={20} />
+            <a href="https://facebook.com">
+              <BsFacebook className="icon" size={30} />
+            </a>
           </li>
           <li>
-            <MdMail className="icon" size={20} />
+            <a href="mailto:nika.mitichashili@gmail.com">
+              <MdMail className="icon" size={30} />
+            </a>
           </li>
         </ul>
       </div>
