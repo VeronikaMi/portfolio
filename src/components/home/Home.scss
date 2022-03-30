@@ -23,9 +23,12 @@ header {
         margin-left: 1rem;
         height: fit-content;
 
-        &:hover {
-          transition: $transition;
-          color: lighten($secondary-color, 10%);
+        a {
+          color: $secondary-color;
+          &:hover {
+            transition: $transition;
+            color: lighten($secondary-color, 10%);
+          }
         }
       }
     }

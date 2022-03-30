@@ -24,12 +24,12 @@ nav {
     flex-direction: row;
 
     &:hover {
-      color: $text-color;
+      color: $secondary-color;
       background: $bg-color;
     }
   }
   .active {
-    color: $text-color;
+    color: $secondary-color;
     background: $bg-color;
   }
 }

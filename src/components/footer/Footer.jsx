@@ -30,17 +30,17 @@ function Footer() {
         </ul>
         <ul className="contact-links">
           <li>
-            <a href="https://github.com/VeronikaMi">
+            <a href="https://github.com/VeronikaMi" target="_blank" rel="noreferrer">
               <BsGithub className="icon" size={30} />
             </a>
           </li>
           <li>
-            <a href="https://facebook.com">
+            <a href="https://facebook.com" target="_blank" rel="noreferrer">
               <BsFacebook className="icon" size={30} />
             </a>
           </li>
           <li>
-            <a href="mailto:nika.mitichashili@gmail.com">
+            <a href="mailto:nika.mitichashili@gmail.com" target="_blank" rel="noreferrer">
               <MdMail className="icon" size={30} />
             </a>
           </li>

@@ -22,18 +22,18 @@ function Home() {
         <img src={logo} alt="logo" />
         <ul className="social-media-links">
         <li>
-            <a href="https://github.com/VeronikaMi">
-              <BsGithub className="icon" size={30} />
+            <a href="https://github.com/VeronikaMi" target="_blank" rel="noreferrer">
+              <BsGithub className="icon" size={20} />
             </a>
           </li>
           <li>
-            <a href="https://facebook.com">
-              <BsFacebook className="icon" size={30} />
+            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+              <BsFacebook className="icon" size={20} />
             </a>
           </li>
           <li>
-            <a href="mailto:nika.mitichashili@gmail.com">
-              <MdMail className="icon" size={30} />
+            <a href="mailto:nika.mitichashili@gmail.com" target="_blank" rel="noreferrer">
+              <MdMail className="icon" size={20} />
             </a>
           </li>
         </ul>

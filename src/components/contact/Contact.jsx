@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React, {useEffect, useRef} from "react";
 import "./Contact.scss";
 import { GoMail } from "react-icons/go";
 import { RiMessengerLine } from "react-icons/ri";
@@ -6,6 +6,9 @@ import emailjs from "emailjs-com";
 
 function Contact() {
   const form = useRef();
+  useEffect(()=>{
+    console.log("footer");
+  },[])
   const sendMessage = (e) => {
     e.preventDefault(); //doesn't send the form on default 
     emailjs.sendForm('service_04z8af9', 'template_bx26nh7',form.current,'gU0vNx5Gn9Tf4FTCD');
