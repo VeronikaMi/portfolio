@@ -1,10 +1,18 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./About.scss";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import person from "../../assets/main-pic.png";
 function About() {
+  // useEffect(() => {
+  //   AOS.init({duration:1500});
+  // }, []); 
+  // data-aos="fade-right"
+  // data-aos="fade-in"
+
   return (
-    <section id="about">
+    <section id="about" >
       <div className="headings">
         <h5>get to know</h5>
         <h2>About Me</h2>

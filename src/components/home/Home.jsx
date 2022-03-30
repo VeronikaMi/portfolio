@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import { BsGithub, BsFacebook } from "react-icons/bs";
 import { MdMail } from "react-icons/md";
@@ -8,7 +8,14 @@ import logo from "../../assets/logo.png";
 import person from "../../assets/main-pic.png";
 import CV from "../../assets/cv.txt";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function Home() {
+    useEffect(() => {
+      AOS.init({duration :1500});
+    }, []);
+
   return (
     <header id="home">
       <div className="header">
@@ -26,7 +33,7 @@ function Home() {
         </ul>
       </div>
       <div className="intro">
-        <h1>
+        <h1 data-aos="fade-down">
           Hello, I am{" "}
           <span className="bigger">Veronika - Front-End Developer</span>
         </h1>

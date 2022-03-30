@@ -2,7 +2,7 @@
 
 section {
   .projects {
-    height: 470px;
+    height: fit-content;
     display: flex;
     justify-content: space-around;
     .project {
@@ -46,9 +46,7 @@ section {
     width: $container-width-md;
 
     .projects {
-      height: calc(470px + 2rem);
       flex-wrap: wrap;
-      overflow: hidden;
       .project {
         margin-top: 2rem;
       }
@@ -59,7 +57,6 @@ section {
 @media only screen and (max-width: 890px) {
   section {
     .projects {
-      height: 470px;
       .project {
         &:first-child {
           margin-top: 0;
@@ -79,6 +76,18 @@ section {
         &:not(:first-child) {
           margin-top: 2rem;
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  section {
+    width: $container-width-sm;
+
+    .projects {
+      .project {
+        padding: 10px;
       }
     }
   }

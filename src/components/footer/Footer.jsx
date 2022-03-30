@@ -5,6 +5,12 @@ import { BsGithub, BsFacebook, BsArrowUpSquare } from "react-icons/bs";
 import { MdMail } from "react-icons/md";
 
 function Footer() {
+  const scrollUp = ()=>{
+    document.body.scrollTop = 0; //for safari
+    document.documentElement.scrollTop = 0;
+
+    console.log("Scroll top")
+  }
   return (
     <footer>
       <div className="links">
@@ -39,7 +45,7 @@ function Footer() {
             </a>
           </li>
         </ul>
-        <BsArrowUpSquare size={30} className="arrow" />
+        <BsArrowUpSquare size={30} className="arrow" onClick={scrollUp}/>
         <p>©Veronika Mitichashvili 2022</p>
       </div>
     </footer>

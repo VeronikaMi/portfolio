@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -13,7 +17,6 @@ body {
 
   background-color: $bg-color;
   color: $text-color;
-  scroll-behavior: smooth;
 }
 
 ul {

@@ -12,7 +12,7 @@ function Experience() {
   ];
 
   return (
-    <section id="#experience">
+    <section id="experience">
       <div className="headings">
         <h5>what skills I posses</h5>
         <h2>My Experience</h2>
