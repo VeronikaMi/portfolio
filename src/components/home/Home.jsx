@@ -19,7 +19,7 @@ function Home() {
   return (
     <header id="home">
       <div className="header">
-        <img src={logo} alt="logo" />
+        <img className="logo" src={logo} alt="logo" />
         <ul className="social-media-links">
         <li>
             <a href="https://github.com/VeronikaMi" target="_blank" rel="noreferrer">
@@ -55,7 +55,7 @@ function Home() {
             </button>
           </a>
         </div>
-        <img src={person} alt="person in nature" />
+        <img className="main-pic" src={person} alt="person in nature" />
       </div>
     </header>
   );
