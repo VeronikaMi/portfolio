@@ -15,12 +15,37 @@ section {
       .img {
         height: 300px;
         width: 300px;
-        background-image: url("../../assets/ableton.png");
+        overflow: hidden;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 200%;
+        }
       }
 
       h3 {
         font-size: 1.6rem;
         margin: 0.9rem 0;
+      }
+
+      .project-details {
+        color: #23b5d3;
+        display: flex;
+        gap: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        font-size: 14px;
+      }
+
+      .description {
+        width: 300px;
+        color: #f3e8ee;
+        font-weight: 400;
+        font-size: 16px;
+        margin-bottom: 1rem;
+        line-height: 149.687%;
       }
 
       .btn-container > *:first-child {
@@ -37,7 +62,7 @@ section {
   .see-more {
     display: block;
     margin: 0 auto;
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 }
 

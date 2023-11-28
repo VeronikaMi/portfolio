@@ -39,7 +39,7 @@ a {
 
 .headings {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 section {
@@ -61,7 +61,7 @@ section {
     color: $bg-color;
 
     &:hover {
-      background-color: lighten($action-color, 2%);
+      background-color: lighten($action-color, 5%);
     }
   }
 
@@ -69,8 +69,8 @@ section {
     background-color: transparent;
     color: $action-color;
     &:hover {
-      color: lighten($action-color, 2%);
-      border-color: lighten($action-color, 2%);
+      color: lighten($action-color, 5%);
+      border-color: lighten($action-color, 5%);
     }
   }
 }

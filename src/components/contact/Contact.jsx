@@ -1,17 +1,23 @@
-import React, {useEffect, useRef} from "react";
+import React, { useEffect, useRef } from "react";
 import "./Contact.scss";
 import { GoMail } from "react-icons/go";
-import { RiMessengerLine } from "react-icons/ri";
+import { RiInstagramLine } from "react-icons/ri";
+import { AiOutlineLinkedin } from "react-icons/ai";
 import emailjs from "emailjs-com";
 
 function Contact() {
   const form = useRef();
-  useEffect(()=>{
+  useEffect(() => {
     console.log("footer");
-  },[])
+  }, []);
   const sendMessage = (e) => {
-    e.preventDefault(); //doesn't send the form on default 
-    emailjs.sendForm('service_04z8af9', 'template_bx26nh7',form.current,'gU0vNx5Gn9Tf4FTCD');
+    e.preventDefault(); //doesn't send the form on default
+    emailjs.sendForm(
+      "service_04z8af9",
+      "template_bx26nh7",
+      form.current,
+      "gU0vNx5Gn9Tf4FTCD"
+    );
     e.target.reset(); //resets the form
   };
   return (
@@ -42,14 +48,38 @@ function Contact() {
           <div className="trigger">
             <GoMail size={33} />
             <h4>Email</h4>
-            <h6>myeamil@gmail.com</h6>
-            <a href="mailto:nika.mitichashili@gmail.com" target="_blank" rel="noreferrer">Send a message</a>
+            <h6>veronika.mitichashvili@gmail.com</h6>
+            <a
+              href="mailto:veronika.mitichashvili@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Send a message
+            </a>
           </div>
           <div className="trigger">
-            <RiMessengerLine size={33} />
-            <h4>Messenger</h4>
-            <h6>facebookid</h6>
-            <a href="https://m.me/VeronikaMi01" target="_blank" rel="noreferrer">Send a message</a>
+            <AiOutlineLinkedin size={33} />
+            <h4>LinkedIn</h4>
+            <h6>Veronika Mitichashvili</h6>
+            <a
+              href="https://www.linkedin.com/in/veronika-mitichashvili-0b8193292"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Send a message
+            </a>
+          </div>
+          <div className="trigger">
+            <RiInstagramLine size={33} />
+            <h4>Instagram</h4>
+            <h6>nika_veronikami</h6>
+            <a
+              href="https://instagram.com/nika_veronikami"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Send a message
+            </a>
           </div>
         </div>
       </div>

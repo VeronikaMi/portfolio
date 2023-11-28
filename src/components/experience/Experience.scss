@@ -28,10 +28,11 @@ section {
       border: 1px solid $secondary-color;
       border-radius: $border-radius;
       height: 25px;
-      .progress {
-        background-color: $secondary-color;
-        height: inherit;
-        border-radius: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        color: $text-color;
       }
     }
   }

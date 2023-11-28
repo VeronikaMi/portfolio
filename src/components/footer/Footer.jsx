@@ -1,16 +1,21 @@
 import React from "react";
 import "./Footer.scss";
 
-import { BsGithub, BsFacebook, BsArrowUpSquare } from "react-icons/bs";
+import {
+  BsGithub,
+  BsArrowUpSquare,
+  BsInstagram,
+  BsLinkedin,
+} from "react-icons/bs";
 import { MdMail } from "react-icons/md";
 
 function Footer() {
-  const scrollUp = ()=>{
+  const scrollUp = () => {
     document.body.scrollTop = 0; //for safari
     document.documentElement.scrollTop = 0;
 
-    console.log("Scroll top")
-  }
+    console.log("Scroll top");
+  };
   return (
     <footer>
       <div className="links">
@@ -30,23 +35,44 @@ function Footer() {
         </ul>
         <ul className="contact-links">
           <li>
-            <a href="https://github.com/VeronikaMi" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/VeronikaMi"
+              target="_blank"
+              rel="noreferrer"
+            >
               <BsGithub className="icon" size={30} />
             </a>
           </li>
           <li>
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
-              <BsFacebook className="icon" size={30} />
+            <a
+              href="https://www.linkedin.com/in/veronika-mitichashvili-0b8193292"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsLinkedin className="icon" size={30} />
             </a>
           </li>
           <li>
-            <a href="mailto:nika.mitichashili@gmail.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://instagram.com/nika_veronikami"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsInstagram className="icon" size={30} />
+            </a>
+          </li>
+          <li>
+            <a
+              href="mailto:nika.mitichashili@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               <MdMail className="icon" size={30} />
             </a>
           </li>
         </ul>
-        <BsArrowUpSquare size={30} className="arrow" onClick={scrollUp}/>
-        <p>©Veronika Mitichashvili 2022</p>
+        <BsArrowUpSquare size={30} className="arrow" onClick={scrollUp} />
+        <p>©Veronika Mitichashvili 2023</p>
       </div>
     </footer>
   );
